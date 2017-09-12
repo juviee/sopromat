@@ -80,4 +80,4 @@ if __name__=='__main__':
         output_file = "output.txt"
     with open(output_file, encoding='utf-8', mode='w') as f_out:
         f_out.write(''.join(str(frequency) + '\n'))
-        f_out.write(''.join(str(x)+'\n' for x in energy))
+        f_out.write(''.join('{0:.6}'.format(x)+'\n' for x in energy))
